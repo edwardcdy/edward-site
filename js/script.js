@@ -16,7 +16,9 @@ $(document).ready(function() {
     anchors: ['info','projects','reach'],
     recordHistory: false,
     onLeave: cb,
-    allowPageScroll: true
+    allowPageScroll: true,
+    loopHorizontal: false,
+    controlArrows: false
   });
 });
 
@@ -26,6 +28,10 @@ $(document).on('click', '#down', function(){
 
 $(document).on('click', '#right', function(){
   $.fn.fullpage.moveSlideRight();
+});
+
+$(document).on('click', '#left', function(){
+  $.fn.fullpage.moveSlideLeft();
 });
 
 $(document).on('click', '#contact', function(){
@@ -44,9 +50,6 @@ $(document).on('click', '#linkedin', function(){
   window.location = "https://www.linkedin.com/in/edward-yao-677b3465/";
 });
 
-$(document).on('click', '#send', function(){
 
-
-});
 
 
