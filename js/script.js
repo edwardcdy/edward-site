@@ -18,7 +18,7 @@ $(document).ready(function() {
     onLeave: cb,
     allowPageScroll: true,
     loopHorizontal: false,
-    controlArrows: false
+    controlArrows: false,
   });
 });
 

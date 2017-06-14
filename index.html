@@ -16,16 +16,17 @@
   <script src="./js/jquery.slimscroll.min.js"> </script>
   <script src="./js/jquery.fullpage.min.js"> </script>
   <script src="./js/script.js"> </script>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
 <div id="fullpage">
 
     <div class="section">
       <div class="tab-2 profile"> 
-        <div class="name"> Edward C. Yao </div>
+        <div class="name"> Edward Yao </div>
       </div>
       <div class="tab-2 info" > 
-        <div class="subtitle">Theorist, Engineer, Experimenter. </div>
+        <div class="subtitle">Engineer, Theorist,  </div>
         <div class="description"> 
           I a sophomore at Dartmouth College ('19), currently studying computer science and economics. My interests in computer 
           science involve machine learning and artificial intelligence, web design, and hacking and security. On the 
@@ -64,15 +65,70 @@
       <div class="slide"> 
         <div class="projNavLeft" id="left"><i class="fa fa-arrow-left top"></i></div>
         <div class="projNavRight" id="right"><i class="fa fa-arrow-right top"></i></div>
-        
+        <div class="proj"> 
+          <div class="proj-title"> K-Means Clustering </div>
+          <img src="./img/10KMeans.png" class="fit shadow"> </img>
+          <div class="proj-description space-5">The above image shows the results of a picture whose colors have been reduced to 8 or 256 
+            colors, as shown in the window titles. The algorithm that reduces and maps colors relies on 
+            <a href="https://en.wikipedia.org/wiki/K-means_clustering"> K-means clustering </a>. This project was written in Java.
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="slide"> 
+        <div class="projNavLeft" id="left"><i class="fa fa-arrow-left top"></i></div>
+        <div class="projNavRight" id="right"><i class="fa fa-arrow-right top"></i></div>
+        <div class="proj"> 
+          <div class="proj-title"> CS50 Game Server  </div>
+          <img src="./img/50GameServer.png" class="fit"> </img>
+          <div class="proj-description "> This project is a game server, running from a command line, handling varying requests 
+            that are structured by other programs as part of the complete game. Keeps track of a game state, and ends the game upon
+            command line directive to end, and also prints out the state of the game periodically. Written entirely in C.
+          </div>
+        </div>
+      </div>
+    
+      <div class="slide"> 
+        <div class="projNavLeft" id="left"><i class="fa fa-arrow-left top"></i></div>
+        <div class="projNavRight" id="right"><i class="fa fa-arrow-right top"></i></div>
+        <div class="proj"> 
+          <div class="proj-title"> Connect4 AI  </div>
+          <img src="./img/10Connect.png" class="fit"> </img>
+          <div class="proj-description"> A simple Connect4 game with an undo feature. The somewhat interesting part of this was the Connect4 bot 
+            , which relies on a game tree search and 
+            <a href="https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning"> alpha-beta pruning </a> 
+            in order to make its decisions. Users are able to set how many moves ahead the 
+            bot looks (i.e. the depth of the tree when searching). Implements a hueristic to calculate score where three-in-a-rows are somewhat valuable
+            and four-in-a-rows are infinitely valuable. Written in Java.
+          </div>
+        </div>
       </div>
 
       <div class="slide"> 
         <div class="projNavLeft" id="left"><i class="fa fa-arrow-left top"></i></div>
         <div class="projNavRight" id="right"><i class="fa fa-arrow-right top"></i></div>
-        
+        <div class="proj"> 
+          <div class="proj-title"> Huffman Tree Encoding</div>
+          <img src="./img/10Huffman.png" class="fit"> </img>
+          <div class="proj-description"> A java implementation of a Huffman-encoded text file. The image displayed above corresponds
+            to the US Constitution, compressed via the implemented algorithm.
+          </div>
+        </div>
       </div>
 
+      <div class="slide"> 
+        <div class="projNavLeft" id="left"><i class="fa fa-arrow-left top"></i></div>
+        <div class="proj"> 
+          <div class="proj-title"> Y86 Processor</div>
+          <img src="./img/51.jpg" class="y86"> </img>
+          <div class="proj-description"> Based off a logisim skeleton of the Y86 CPU, I created an implementation of a basic Y86 CPU 
+            (no pipelining or caching). The user can control the clock cycles and resetting/rebooting the computer. Using software 
+            provided by our textbook's authors, I was able to load my Y86-assembly code into parts of ROM and RAM and simulate a basic
+            operating system running on a processor!
+          </div>
+        </div>
+      </div>
       
 
     </div>
@@ -84,7 +140,7 @@
         <form class="email-form" action="https://formspree.io/edwardcdy@gmail.com" onsubmit="return validateForm();" method="POST">
           <div class="space-bottom">
             <input class="input" placeholder="Name" name="name" required>
-            <input class="tab-2" placeholder="Return email" name="_replyto" type="email" required>
+            <input class="input" placeholder="Return email" name="_replyto" type="email" required>
           </div>
           <textarea rows="4" cols="50" placeholder="Message" name="message" required></textarea>
           <input class="btn send" type="submit" value="Send" id="send"></input>
@@ -97,6 +153,7 @@
         <i class="fa fa-github-square pad fa-3x" id="github"></i>
         <i class="fa fa-facebook-square pad fa-3x" id="facebook"></i>
       </div>
+
     </div>
 
     
