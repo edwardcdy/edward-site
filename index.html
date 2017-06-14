@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="referrer" content="origin">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Edward Yao</title>
   <link rel="icon" href="/img/favicon.png">
@@ -12,6 +13,7 @@
   <meta name="description" content="Edward Yao, Dartmouth College '19'">
   <meta name="googlebot" content="index,follow">
   <script src="./js/jquery-3.2.1.min.js"> </script>
+  <script src="./js/jquery.slimscroll.min.js"> </script>
   <script src="./js/jquery.fullpage.min.js"> </script>
   <script src="./js/script.js"> </script>
 </head>
@@ -30,32 +32,61 @@
           design a compiler that parses actual english language into working code. <br><br>
 
           In my free time, I enjoy music-related activities. You will often catch me dancing with my hip-hop dance group, Street Soul.
-          Another place that I can be found is the practice room, where I enjoy learning new piano pieces. If you're super lucky,
+          Another place that I can be found is the practice room, where I enjoy learning new piano 
+          <a href="https://www.youtube.com/watch?v=dCMRhpmVlz0&list=PL69JcsEC_OgRcw9HZS6LVX9ryFkBEIbeQ"> pieces</a>. 
+          If you're super lucky,
           you might just catch me sketching away in a sketchbook, although the chances of that happening are very slim (I would advise 
           anyone that does indeed see me attempting to scribble to immediately purchase lottery tickets).
         </div>
-        <div class="right"> </div>
+        <div class="space-5">
+          <div class="next"><i class="fa fa-arrow-down top" id="down"> </i></div>
+        </div>
       </div>
     </div>
 
-    
 
     <div class="section projects">
       <div class="click"> <b> Selected Projects </b> </div>
       <div class="quote"> <i> The true method of knowledge is experiment <br><br> -William Blake </i></div>
-      <div class="center">
+
+      <div class="projdescript"> Following is a brief selection of projects I have done both inside the 
+        classroom and outside. Out of respect for various teachers and employers, information on most of the projects 
+        I have posted here are incomplete and will not divulge complete code or implementation details.
+      </div>
+      <div class="center space-5">
         <div class="next"><i class="fa fa-arrow-right top"></i></div>
       </div>
     </div>
 
+    <div class="section contact">
+       <div class="title">Let's Keep in Touch! </div> 
+       <div class="email-text"> Send me an email! </div>
+       <div class="center third "> 
+        <form class="email-form" action="https://formspree.io/edwardcdy@gmail.com" method="POST">
+          <div class="space-bottom">
+            <input class="input" placeholder="Name" name="name">
+            <input class="tab-2" placeholder="Return email" name="_replyto">
+          </div>
+          <textarea rows="4" cols="50" placeholder="Message" name="message"></textarea>
+          <input class="btn send" type="submit" value="Send" id="send"></input>
+        </form>
+      </div>
+
+      <div class="email-text"> Or connect with me via social platforms! </div>
+      <div class="center">
+        <i class="fa fa-linkedin-square pad fa-3x" id="linkedin"></i>
+        <i class="fa fa-github-square pad fa-3x" id="github"></i>
+        <i class="fa fa-facebook-square pad fa-3x" id="facebook"></i>
+      </div>
+    </div>
 
     
 </div>
 <div class="footer">
   <ul>
-    <li><a href="#"> Blog </a></li>
-    <li><a href="#"> Resume </a></li>
-    <li><a href="#"> Contact </a></li>
+    <li><a href="#blog" id="blog"> Blog </a></li>
+    <li><a href="./pdf/resume.pdf" id="resume"> Resume </a></li>
+    <li><a href="#contact" id="contact" > Contact </a></li>
   </ul>
 </div>
 
