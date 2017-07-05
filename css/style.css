@@ -330,6 +330,11 @@ input:focus {
   margin-right: 3%;
 }
 
+.email {
+  float: left;
+  width: 50%;
+}
+
 .email-text {
   padding-top: 4%;
   font-size: 1em;
