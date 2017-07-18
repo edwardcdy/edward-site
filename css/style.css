@@ -1,9 +1,14 @@
 body {
   font-family: "Source Sans Pro", Helvetica, sans-serif !important;
+  font-size: 1.2vmax;
 }
 
 .space-5 {
   padding-top: 5% !important;
+}
+
+.space-3 {
+  padding-top: 3% !important;
 }
 
 .third {
@@ -20,7 +25,7 @@ body {
 
 
 .space-bottom {
-  padding-bottom: 7%;
+  padding-bottom: 5vh;
 }
 
 a {
@@ -119,7 +124,7 @@ a {
 
 
 .subtitle {
-  padding-top: 23%;
+  padding-top: 28vh;
   padding-right: 5%;
   padding-left: 5%;
   font-size: 1.6em;
@@ -145,7 +150,7 @@ a {
 
 .name {
   color: black;
-  padding-top: 75%;
+  padding-top: 75vh;
   
   margin: 0 auto;
   font-size: 2em;
@@ -224,13 +229,13 @@ a {
 }
 
 .top {
-  margin: auto;
-  padding-top: 10px;
+  position: relative;
+  top: 45%;
+  transform: translateY(-50%);
 }
 
 .top-2 {
-  margin: auto;
-  padding-top: 12px;
+  
 }
 
 .center {
@@ -326,7 +331,7 @@ input:focus {
 
 .input {
   float: left;
-  width: 46%;
+  width: 43%;
   margin-right: 3%;
 }
 
@@ -342,6 +347,10 @@ input:focus {
   padding-left: 5%;
   text-align: center;
   padding-bottom: 1%;
+}
+
+.email-form {
+  box-sizing: border-box;
 }
 
 .pad {
