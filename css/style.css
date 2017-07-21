@@ -8,7 +8,7 @@ body {
 }
 
 .space-3 {
-  padding-top: 3% !important;
+  padding-top: 3vh;
 }
 
 .third {
@@ -248,6 +248,7 @@ a {
   height: 100%;
   margin: auto;
   margin-top: 5%;
+  font-size: 2vh;
 }
 
 .proj-title {
