@@ -119,6 +119,7 @@
 
       <div class="slide"> 
         <div class="projNavLeft" id="left"><i class="fa fa-arrow-left top"></i></div>
+        <div class="projNavRight" id="right"><i class="fa fa-arrow-right top"></i></div>        
         <div class="proj"> 
           <div class="proj-title"> Y86 Processor</div>
           <img src="./img/51.jpg" class="y86"> </img>
@@ -128,6 +129,39 @@
             operating system running on a processor!
           </div>
 
+        </div>
+      </div>
+
+      <div class="slide"> 
+        <div class="projNavLeft" id="left"><i class="fa fa-arrow-left top"></i></div>
+        <div class="projNavRight" id="right"><i class="fa fa-arrow-right top"></i></div>                
+        <div class="proj"> 
+          <div class="proj-title"> Tiny Search Engine</div>
+          <img src="./img/tse.png" class="y86"> </img>
+          <div class="proj-description"> The Tiny Search Engine had three seperate modules: crawler, which scans a webpage and its neighbors up to a maximum link depth 
+            (we don't quite want to scan the deep web yet); indexer, which scans the webpages for words and sorts them into an index file, and
+            querier, which parses a user query with expected "and" and "or" syntax and uses set addition to generate the best matching webpages
+            for each query. Shown above is a run of just querier on a small index whose contents I have printed out. Written in C.
+          </div>
+
+        </div>
+      </div>
+
+      <div class="slide"> 
+        <div class="projNavLeft" id="left"><i class="fa fa-arrow-left top"></i></div>
+        <div class="projNavRight" id="right"><i class="fa fa-arrow-right top"></i></div>                
+        <div class="proj"> 
+          <div class="proj-title"> Touchless Musical Instrument </div>
+          <div class="proj-description"> 
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yKrMajol9gw" frameborder="0" allowfullscreen></iframe>
+            <br/>
+            <br/>
+            The project is intending to simulate a basic version of waveform generators in music software, such as ES1 in Logic Pro X. We demo the device above. The 
+            project includes an ultrasonic range finder, which communicates with pulse-width modulation. We transform that signal and run it along a counter which
+            counts along a sine wave (or square wave or oscillating square wave). We then transmit our voltage level into a stream of bits and send it serially. 
+            This was written in VHDL (a hardware description language) and painstakingly debugged using oscilloscopes.
+          </div>
+          
           <div class="space-3" id="down">
             Any questions?
             <div class="next"><i class="fa fa-arrow-down top" > </i></div>
