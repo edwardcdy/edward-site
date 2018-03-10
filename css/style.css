@@ -1,365 +1,223 @@
+/***** GLOBAL DEFAULTS *******
+*****************************/
+
+:root {
+  --bck-color: #261132;
+  --col-2: #FFB86F;
+  --col-1: #E0CA3C;
+  --col-3: #BA5C12;
+  --col-4: #3E2F5B;
+  --col-5: #38d1f7;
+}
+
+html { 
+  display: inline-block;
+  
+  box-sizing: border-box;
+  height: 100%;
+}
+
 body {
   font-family: "Source Sans Pro", Helvetica, sans-serif !important;
   font-size: 1.2vmax;
-}
-
-.space-5 {
-  padding-top: 5% !important;
-}
-
-.space-3 {
-  padding-top: 3vh;
-}
-
-.third {
-  width: 33%;
-  margin: auto;
-}
-
-.tab-2 {
-  float: left;
-  width: 50%;
+  margin: 0;
   height: 100%;
-  display: inline-block;
-}
-
-
-.space-bottom {
-  padding-bottom: 5vh;
 }
 
 a {
+  color:inherit;
   text-decoration: none;
-  color: #f48938;
 }
 
-.shadow {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.col-1 {
+  color: var(--col-1);
 }
 
-/* shake animation */
-@keyframes shake {
-  10%, 90% {
-    transform: translate3d(0, -1px, 0);
-  }
-
-  20%, 80% {
-    transform: translate3d(0, 2px, 0);
-  }
-
-  30%, 50%, 70% {
-    transform: translate3d(0, -4px, 0);
-  }
-
-  40%, 60% {
-    transform: translate3d(0, 4px, 0);
-  }
+.col-2 {
+  color: var(--col-2);
 }
 
-
-/* toolbar styles */
-
-.footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  width: 100%; 
-  background-image: none;
-  background-repeat: repeat;
-  background-attachment: scroll;
-  background-position: 0% 0%;
-  position: fixed;
-  bottom: 0pt;
-  left: 0pt;
-
-  color: #666666;
-  font-size: 10px;
-  min-height: 20px;
-  text-align: center;
-  padding-bottom: 15px;
+.col-3 {
+  color: var(--col-3);
 }
 
-
-.footer ul {
-  list-style-type: none;
-  padding: 0 0 0 0;
-  margin: 0 0 0 0;
-}
-
-.footer ul li {
-  display: inline;
-}
-
-.footer ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
-  padding: 3px 7px 3px 7px;
-}
-
-.gray {
-  color: #515151 !important;
-}
-
-.gray:hover {
-  color: #f48938 !important;
-}
-
-.footer ul li a:hover {
-  color: #f48938;
-}
-
-
-/* info panel */
-.info {
-  color: white;
-  background-image: url(../img/city.jpg);  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  background-size: 100% 100%;
+#fullpage {
   height: 100%;
-  width: 50%; 
-  display: inline;
+
+  background-color: var(--bck-color);
+
+  min-width: 400px;
+  min-height: 700px;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 
-.subtitle {
-  padding-top: 28vh;
-  padding-right: 5%;
-  padding-left: 5%;
-  font-size: 1.6em;
-  font-style: italic;
-}
+/*****  Landing page ********* 
+*****************************/
 
-.description{
-  padding-top: 4%;
-  font-size: 1em;
-  padding-right: 5%;
-  padding-left: 5%;
-}
+#landing {
 
-.profile {
-  background-image: url(../img/prof.jpg);
-  background-size: 100% 100%;
+  color: white;
+  white-space: nowrap;
+  display: inline-block;
+  overflow:hidden;
+
   height: 100%;
-  width: 50%; 
-  text-align: center;
-  display: inline;
-  min-height: 500px;
+  width: 100%;
+
+  background-image: url("../img/vapor1.png");
+  background-position: bottom;
+  background-size: 100% 85%;
+  background-repeat: no-repeat;
+
+}
+
+#left-panel-landing {
+  max-width: 40%;
+}
+
+#right-panel-landing {
+  padding-left: 10%;
+  max-width: 50%;
 }
 
 .name {
-  color: black;
-  padding-top: 75vh;
+  color: var(--col-1);
   
   margin: 0 auto;
-  font-size: 2em;
+  font-size: 50px;
 }
 
-/* projects panel */
+#quote {
+  color: var(--col-1);
 
-.projects {
-  /* color: white;
-  background-image: url(../img/proj.jpg); */
-  background-size: 100% 100%;
-  height: 100%;
-  text-align: center;
-  color: #515151;
-  min-height: 500px;
-
+  position: absolute;
+  
+  top: 20%;
+  right: 10%;
+  font-size: 26px;
 }
 
-.click {
-  padding-top: 100px;
-  font-size: 2em;
+.overview {
+  color: var(--col-1);
+  padding-left: 8vh;
 }
 
-.quote {
-  padding-top:40px;
+.vertical-line {
+  position: absolute;
+  border-left: thick solid var(--col-1);
+
+  top: 15%;
+  margin-left: 5%;
+  height: 80%;
+  min-height: 600px;
 }
 
-.projdescript {
-  padding-top: 4%;
-  font-size: 1em;
-  padding-right: 5%;
-  padding-left: 5%;
-  max-width: 40%;
-  margin: auto;
+.timeline {
+  color: var(--col-1);
+
+  padding-top: 25%;
+  padding-left: 17%;
+  max-height: 80%;
+
+  overflow: hidden;
 }
 
-.next {
-  border-radius: 50%;
-  border: solid;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  margin: 0 auto;
+.entry {
+  background-color: var(--col-4);
+  color: var(--col-2);
+  font-size: 15px;
+
+  padding: 7px 12px;
+  border-radius: 5px;
+
+  white-space: pre-wrap;      /* CSS3 */   
+  white-space: -moz-pre-wrap; /* Firefox */    
+  white-space: -pre-wrap;     /* Opera <7 */   
+  white-space: -o-pre-wrap;   /* Opera 7 */    
+  word-wrap: break-word;      /* IE */
+
+  transition: box-shadow 1s;
+
+  margin-bottom: 6px;
 }
 
-
-
-.projNavLeft {
-  border-radius: 50%;
-  border: solid;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  margin: 10px 5px;
-  float: left;
+.entry:hover {
+  box-shadow: 4px 4px 0px rgba(0,0,0,.5); 
 }
 
-.projNavRight {
-  border-radius: 50%;
-  border: solid;
-  width: 40px;
-  height: 40px;
-  float: right;
-  margin: 10px 5px;
-}
-
-.next:hover, .projNavRight:hover, .projNavLeft:hover {
-  color: #f48938;
-  cursor: pointer; 
-  cursor: hand;
-
-  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
-}
-
-.top {
+#more{
   position: relative;
-  top: 45%;
-  transform: translateY(-50%);
+  left: 58%;
+  bottom: 6%;
+
+  color: var(--col-1);
+  font-size: 2.5em;
+
+  font-weight: 900;
+
+  padding: 10px 10px;
+  border-radius: 4px;
+
+  transition: box-shadow 1s;
 }
 
-.top-2 {
+#more:hover {
+  box-shadow: 3px 3px 10px rgba(0,0,0,.5);
+  cursor: pointer; 
+}
+
+#invis {
+  position: absolute;
+
+  top: 4%;
+  left: 35%;
+  bottom: 4%;
+
+  padding: 40px 70px;
+
+  width: 100%;
+}
+
+#circle {
+  display: none;
+  position: absolute;
+  top: calc(50% - 280px);
+  left: calc(50% - 280px);
+
+  border-right: thick solid var(--col-3);
+  border-left: thick solid var(--col-3);
+  border-width: 20px;
   
+  width: 560px;
+  height: 560px;
+  border-radius: 50%;
 }
 
-.center {
-  text-align: center;
-}
 
-/* project panels */
-.proj {
-  max-width: 70%;
-  height: 100%;
-  margin: auto;
-  margin-top: 5%;
-  font-size: 2vh;
-}
+#everything {
 
-.proj-title {
-  padding: 0 0 2% 0;
-  font-size: 1.3em;
-}
-
-.proj-description {
-  padding: 1% 0 0 0;
-}
-
-.fit {
-  max-width: 70%;
-  max-height: 60%;
-}
-
-.y86 {
-  max-width: 100%;
-  max-height: 60%;
-}
-
-/* contact panel */
-.contact {
   color: white;
-  background-color: #515151;
+  white-space: nowrap;
+  overflow:hidden;
+  display: none;
+
   height: 100%;
-  min-height: 500px;
+  width: 100%;
+
+  background-image: url("../img/vapor2.png");
+  background-position: bottom;
+  background-size: 100% 85%;
+  background-repeat: no-repeat;
+
 }
 
-.title {
-  font-size: 2.6em;
-  font-style: bold;
-  text-align: center;
-}
 
-
-.btn {
-  color: white;
-  background-color: #515151;
-  border: solid;
-  border-radius: 2px;
-  width: 70px;
-  text-align: center;
-  height: 30px;
-  font-size: 1em;
-}
-
-.btn:hover {
-  color: #f48938;
-  cursor: pointer; 
-  cursor: hand;
-}
-
-textarea {
-  border-radius: 3px;
-  width: 99%;
-  border: none;
-  resize: none;
-}
-
-textarea:focus {
-  outline: none;
-  border-bottom: 3px solid #f48938;
-}
-
-input {
-  height: 2em;
-  border-radius: 3px;
-  min-width: 5%;
-  border: none;
-}
-
-input:focus {
-  outline: none;
-  border-bottom: 3px solid #f48938;
-}
-
-.send {
-  margin: 1% auto;
-}
-
-.input {
-  float: left;
-  width: 43%;
-  margin-right: 3%;
-}
-
-.email {
-  float: left;
-  width: 50%;
-}
-
-.email-text {
-  padding-top: 4%;
-  font-size: 1em;
-  padding-right: 5%;
-  padding-left: 5%;
-  text-align: center;
-  padding-bottom: 1%;
-}
-
-.email-form {
-  box-sizing: border-box;
-}
-
-.pad {
-  padding: 2px 2px;
-}
-
-#linkedin:hover, #facebook:hover, #github:hover {
-  color: #f48938;
-  cursor: pointer; 
-  cursor: hand;
-}
