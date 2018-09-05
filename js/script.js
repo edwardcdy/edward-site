@@ -23,6 +23,9 @@ $(document).ready(function(){
       $('#everything').fadeIn({
         duration: 1000
       });
+      $("#off-black").animate({
+        color: "black",
+      }, 1000);
     };
 
     var after = function(){
